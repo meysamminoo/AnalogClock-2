@@ -40,15 +40,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
+    position: relative;
+}
+.clock .hand {
+  position: absolute;
+  transform-origin: bottom;
+  bottom: 6rem;
+  border-radius: 0.2rem;
+  z-index: 50;
 }
 .clock .hours {
     width: 0.4rem;
     height: 3.2rem;
     background: var(--greylight-3);
-    position: absolute;
-    top:44%;
-    right:50%;
 }
 .clock .minutes{
     width: 0.4rem;
